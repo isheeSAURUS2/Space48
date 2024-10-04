@@ -1284,6 +1284,72 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d8afc932fa85bc4eb477a1cf101cc49, type: 3}
+--- !u!1 &1871695326 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2708252833709529029, guid: 303d77a6e9e41814fb6e5bb1403b960a,
+    type: 3}
+  m_PrefabInstance: {fileID: 8060850351976461083}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1871695331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871695326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d243748f8297eb468e6d899a2016f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laserPrefab: {fileID: 6296192066327028313, guid: fb1761f4ca56baf4184f207a50c08d0a,
+    type: 3}
+  cooldownTime: 3
+--- !u!114 &1871695332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871695326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 153aa668d804c3340b8662edea535631, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  rotationSpeed: 25
+--- !u!114 &1871695333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871695326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b27a899ce9b2c8b46a229319003fba33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemImageHolder: {fileID: 1410528564}
+--- !u!114 &1871695334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871695326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5762d716bb0bfdc4c9a96c142b100b32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  introductionField: {fileID: 52375720}
+  messageField: {fileID: 52375720}
+  displayTime: 5
+  message: "Welcome to Space 4 8. \n Move your ship with the arrows or WASD. \n Shoot
+    with SPACE. \n Gather pickups and cycle with 'Left CTR'.  \n  Use pickups with
+    'E'."
 --- !u!1001 &2054224625
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1498,10 +1564,27 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 896679031009646393, guid: 303d77a6e9e41814fb6e5bb1403b960a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2708252833709529029, guid: 303d77a6e9e41814fb6e5bb1403b960a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1871695332}
+    - targetCorrespondingSourceObject: {fileID: 2708252833709529029, guid: 303d77a6e9e41814fb6e5bb1403b960a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1871695331}
+    - targetCorrespondingSourceObject: {fileID: 2708252833709529029, guid: 303d77a6e9e41814fb6e5bb1403b960a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1871695333}
+    - targetCorrespondingSourceObject: {fileID: 2708252833709529029, guid: 303d77a6e9e41814fb6e5bb1403b960a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1871695334}
   m_SourcePrefab: {fileID: 100100000, guid: 303d77a6e9e41814fb6e5bb1403b960a, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

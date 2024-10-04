@@ -5,15 +5,13 @@ using UnityEngine;
 public class LaserBehaviour : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 500;
-    // Start is called before the first frame update
-    void Start()
+    [HideInInspector] public GameObject Ship;
+    private float dir = 1;
+    private void Update()
     {
-        
+        Ship.GetComponent<Move>().DoMove(dir, gameObject, moveSpeed);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        transform.position = transform.position + transform.forward * moveSpeed * Time.deltaTime;
-    }
+
+
 }
