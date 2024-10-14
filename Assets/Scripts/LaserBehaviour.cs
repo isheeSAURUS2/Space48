@@ -11,7 +11,4 @@ public class LaserBehaviour : MonoBehaviour
     {
         Ship.GetComponent<Move>().DoMove(dir, gameObject, moveSpeed);
     }
-
-
-
 }
